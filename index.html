@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/main.js"></script>
+  <title>Browser</title>
+</head>
+
+<body>
+    
+    
+
+    <button onclick="fillWithRandomNumbers()">Fill random numbers</button>
+    <button id="sortButton" onclick="sort()">sort</button>
+    <br/><br/>
+    
+    <label>filter condition: </label>
+    <input type="text" maxlength="1" onkeypress="return restrictInputToCertainCharacters(event)" id="filterConditionInput">
+    <label>value: </label>
+    <input type="number" maxlength="1" id="filterValueInput">
+    <label>enabled: </label>
+    <input type="checkbox" id="filterStatus">
+    
+    <br/><br/>
+    <div id="numInputFields"></div>
+    <br/>
+    <div id="sortingOutput"></div>
+
+
+   
+</html>
